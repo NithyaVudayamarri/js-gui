@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Interactive App</title>
+  <title>Section Estimator</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -13,6 +13,7 @@
 </head>
 
 <body>
+  
   <main class="container-fluid">
 
     <h1>JavaScript for interactive apps!</h1>
@@ -41,10 +42,10 @@
 
     console.log('Declare testable functions.....................')
 
-    function add(x, y) {
-      return x + y
+    function divide(x, y) {
+      return x/y
     }
-    console.log('Defined add=' + add)
+    console.log('Defined divide=' + divide)
 
     console.log('Declare event listeners .......................')
 
@@ -54,7 +55,7 @@
       console.log('i=' + i)
       const j = parseInt(document.getElementById('secondNumber').value)
       console.log('j=' + j)
-      const ans = s + ', your sum is ' + add(i, j) + '.'
+      const ans = s + ', your avg is ' + divide(i, j) + '.'
       document.getElementById('result').innerHTML = ans
     })
 
